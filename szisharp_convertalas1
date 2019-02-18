@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Kérem adjon megv egy számnot!");
+            string x = Console.ReadLine();
+            int i = Convert.ToInt32(x);
+            if (i > 5) Console.WriteLine("A szám nagyobb, mint 5.");
+            else Console.WriteLine("A szám kisebb, mint 5.");
+
+            Console.ReadKey();
+
+
+        }
+    }
+}
