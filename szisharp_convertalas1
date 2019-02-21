@@ -10,7 +10,7 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Kérem adjon megv egy számnot!");
+            Console.WriteLine("Kérem adjon meg egy számot!");
             string x = Console.ReadLine();
             int i = Convert.ToInt32(x);
             if (i > 5) Console.WriteLine("A szám nagyobb, mint 5.");
