@@ -4,26 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication4
+namespace ConsoleApp1
 {
     class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("A víz halmazállapotának vizsgálata:");
+
+            Console.WriteLine("Kérem adja meg a következő adatot:");
             Console.WriteLine("A víz hőmérséklete:");
             double t = Convert.ToDouble(Console.ReadLine());
             if (t > 0);
-            {
-
-            if (t >= 100) Console.WriteLine("Gőz");
-              
-                    
-            else Console.WriteLine("Víz");
-                            
-            }
-
             else Console.WriteLine("Jég");
+            { 
+                if (t >= 100) Console.WriteLine("Gőz");
+                else Console.WriteLine("Víz");
+            }
 
             Console.ReadKey();
         }
