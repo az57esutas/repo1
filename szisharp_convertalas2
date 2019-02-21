@@ -10,7 +10,7 @@ namespace ConsoleApplication4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("A víz halmazállapotának viszgálata:");
+            Console.WriteLine("A víz halmazállapotának vizsgálata:");
             Console.WriteLine("A víz hőmérséklete:");
             double t = Convert.ToDouble(Console.ReadLine());
             if (t > 0);
