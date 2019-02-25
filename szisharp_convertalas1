@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,7 +45,194 @@ namespace ConsoleApplication3
             else Console.WriteLine("A szám kisebb, mint 5.");
            
             Console.ReadKey();
+                
+                }
+    }
+}
+
+                    Annyi a változás, hogy a kiratásnál használtam a \n-t
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Kérem adjon meg egy egész számot!");
+            string x = Console.ReadLine();                              //itt határozom meg x változót, a c# csak string változót tud Consol-on bevinni.
+            int i = Convert.ToInt32(x);                                 //itt határozom meg, hogy egész számokat szeretnék felhasználni.
+            
+            if (i > 5) Console.WriteLine("A szám nagyobb, mint 5.");
+            
+            else Console.WriteLine("\nA szám kisebb, mint 5.");         //a \n a sortörés, egy sorral lejebb kerül a kiíratott sor.
+           
+            Console.ReadKey();
 
         }
+    }
+}
+
+//------------------------ for ciklus----------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int osszeg = 0;
+            for (int i = 1; i <= 10; i++)
+            {
+                osszeg += i;
+            }
+            Console.WriteLine("A kért összeg – for -- ciklussal: ");
+            Console.WriteLine(osszeg);
+            Console.WriteLine("Nyomjon meg egy billentyűt a kilépéshez!");
+            Console.ReadKey();
+        }
+
+    }
+}
+
+//---------------------- while ciklus -------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int osszeg = 0;
+            for (int i = 1; i <= 10; i++ )
+                
+                {
+                    osszeg += i;
+                }
+            Console.WriteLine("A kért összeg --while-- ciklussal: ");
+            Console.WriteLine(osszeg);
+            Console.WriteLine("Nyomj meg egy billentyűt a kilépéshez!");
+            Console.ReadKey();
+
+                }
+
+    }
+}
+
+
+//----------------------do / wile ciklussal -------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int i = 1;
+            int osszeg = 0;
+            do
+            {
+                osszeg += i; i++;
+            }
+            while (i <= 10);
+            Console.WriteLine("A kért összeg --do while-- ciklussal: ");
+            Console.WriteLine(osszeg);
+            Console.WriteLine("Nyomj meg egy billentyűt a kilépéshez!");
+            Console.ReadKey();
+
+                }
+
+    }
+}
+
+//------------- kombinálva az előző két példa --------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Kérem adjon meg a kezdő számot, egész szám formájában!");
+            string x = Console.ReadLine();                              
+            int y = Convert.ToInt32(x);
+
+            int osszeg = y;
+            for (int i = 1; i <= 10; i ++ )
+                {
+                    osszeg += i;
+                }
+         Console.WriteLine("A kért összeg --for-- ciklussal: ");
+         Console.WriteLine(osszeg);
+         Console.WriteLine("Nyomj meg egy billentyűt a kilépéshez!");
+         Console.ReadKey();
+
+         }
+
+    }
+}
+------------------------------feladat---------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Kérem adjon meg egy a számot!");
+            string x = Console.ReadLine();
+            int a = Convert.ToInt32(x);
+                Console.WriteLine("Kérem adjon meg egy b számot!");
+            string y = Console.ReadLine();
+            int b = Convert.ToInt32(y);
+            Console.WriteLine("\n a + b = "); 
+            Console.WriteLine(a + b);
+            Console.WriteLine("\n a - b = ");
+            Console.WriteLine(a - b);
+            Console.WriteLine("\n a * b = ");
+            Console.WriteLine(a * b);
+            Console.WriteLine("\n a / b = ");
+            Console.WriteLine(a / b);
+
+             
+            Console.ReadKey();
+
+         }
+
     }
 }
