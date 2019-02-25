@@ -1,3 +1,4 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,33 @@ namespace ConsoleApplication3
 
             Console.ReadKey();
 
+
+        }
+    }
+}
+                                        // Újabb órai gyakorlás: 2019.02.25
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Kérem adjon meg egy egész számot!");
+            string x = Console.ReadLine();                            //itt határozom meg a változót, a c# csak string változót tud Consol-on bevinni.
+            int i = Convert.ToInt32(x);                               //itt határozom meg, hogy egész számokat szeretnék felhasználni.
+            
+            if (i > 5) Console.WriteLine("A szám nagyobb, mint 5.");
+            
+            else Console.WriteLine("A szám kisebb, mint 5.");
+           
+            Console.ReadKey();
 
         }
     }
