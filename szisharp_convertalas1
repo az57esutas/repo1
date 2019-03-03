@@ -1,3 +1,41 @@
+----------------------------------------- házi feldat 03.04-re ---------------------------------------
+
+using System;
+
+namespace hazifeladat1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+                          
+           Console.WriteLine("Házi feladat: ");
+           Console.WriteLine("Addig kér be számokat, amíg az összegük meg nem haladja a 100-at, majd kiírja, hogy a bevitt számok közül hány darab volt páros és hány volt páratlan.");
+
+            int osszeg = 0;
+            int paros = 0;
+            int paratlan = 0;
+
+            for (int i = 0; i < 99; i++)
+            {
+                Console.WriteLine("Kérem adjon meg egy egész számot: ");
+                string x = Console.ReadLine();
+                int szam = Convert.ToInt32(x);
+              
+                osszeg = osszeg + szam;
+                if (szam % 2 == 0) paros++;
+                if (szam % 2 != 0) paratlan++;
+                if (osszeg >= 100) break;
+            }
+            Console.WriteLine("A beadott számok közül {0} páros és {1} páratlan", paros, paratlan);
+            Console.ReadKey();
+
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------------------
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
