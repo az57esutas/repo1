@@ -1,1 +1,72 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int osszeg = 0;
+            int paros = 0;
+            int paratlan = 0;
+
+            for (int i = 0; i < 99; i++)
+            {
+                Console.WriteLine("Adjon meg egy egész számot!: "); 
+                int szam = int.Parse(Console.ReadLine());               // int.Parse(Console.ReadLine() parancs ugyan az, mint a Console.ReadLine(x) ; int szam = Convert.ToInt32(x) csak egy sorban.
+
+                osszeg = osszeg + szam;
+
+                
+                if (szam % 2 == 0) paros++;
+                if (szam % 2 != 0) paratlan++;
+                if (osszeg >= 100) break;                                    
+
+                                    
+             }
+            
+            Console.WriteLine(" A megadott szamok közül {0} páros és {1} páratlan", paros, paratlan);
+            Console.ReadKey();
+        }
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+https://www.nive.hu/Downloads/Szakkepzesi_dokumentumok/Szakmai_es_vizsgakovetelmenyek/2016/DL.php?f=54_213_05_Szoftverfejleszto_2016.pdf&tip=szvk_2012_&evszam=2016
+---------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = 10;
+            int y = 23;
+
+
+            Console.WriteLine(x > y);  //x nagyobb, mint y.                 --> False
+            Console.WriteLine(x == y); //x egyenlő y-al.                    --> False
+            Console.WriteLine(x != y); //x nem egyenlő y-al.                --> True
+            Console.WriteLine(x <= y); //x kisebb, vagy egyenlő, mint y.    --> True
+
+            Console.WriteLine("Nyomj egy gombot a kilépéshez!");
+            Console.ReadKey();
+            
+        }
+    }
+}
+
+-------------------------------------------------------------------------------------------------
 
