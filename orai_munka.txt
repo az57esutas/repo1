@@ -70,3 +70,143 @@ namespace ConsoleApplication1
 
 -------------------------------------------------------------------------------------------------
 
+2019.03.11 órai munka
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int szoveghossz;
+            string szoveg = "Ludvig von Beethoven";
+            szoveghossz = szoveg.Length;
+            
+            Console.WriteLine("Szöveg rendesen:");
+            
+            
+                {
+                Console.Write(szoveg[i]);
+                }
+                    
+           Console.WriteLine("Szöveg visszafelé:");
+
+            for (int i = szoveghossz - 1; i >= 0; i-- )
+                {
+                Console.Write(szoveg[i]);
+                }
+
+            Console.WriteLine("Szöveg NAGYBETŰVEL:");
+            Console.WriteLine(szoveg.ToUpper());
+
+            Console.WriteLine("Szöveg kisbetűvel:");
+            Console.WriteLine(szoveg.ToLower());
+            
+            Console.WriteLine("A kilépéshez nyomj meg egy billentyűt!");
+            Console.ReadKey();
+        
+        }
+
+    }
+}
+
+
+--------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Text.RegularExpressions; 
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+
+            
+            Console.WriteLine("Adjon meg egy szót:");
+            string szoveg = Console.ReadLine();
+            Console.WriteLine("Adjon meg egy betűt:");
+            string betu = Console.ReadLine();
+       
+            Regex reg_kif = new Regex(betu); 
+           
+            
+            Match talalat = reg_kif.Match(szoveg); 
+
+            if (talalat.Success)
+            {
+              Console.WriteLine("A találat helye: " + talalat.Index);
+            } 
+
+
+
+            
+
+
+
+
+            Console.WriteLine("A kilépéshez nyomjon meg egy billentyűt!");
+            Console.ReadKey();
+        }
+        
+    }
+}
+
+---------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Text.RegularExpressions; 
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("Adjon meg egy szót:");
+            string x = Console.ReadLine();
+            string szoveg = Convert.ToString(x);
+ 
+ 
+            Console.WriteLine("Adjon meg egy betűt:");
+            string y = Console.ReadLine();
+            string betu = Convert.ToString(y);
+
+            int i = 0;
+            int db = 0;
+
+            while (i < szoveg.Length)
+            {
+                if (Convert.ToString(szoveg[i]) == betu) db++; i++;
+
+            }
+
+            Console.WriteLine(" A szóban {0} darab keresett betű található.", db);
+
+
+
+            Console.WriteLine("++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("A kilépéshez nyomjon meg egy billentyűt!");
+            Console.ReadKey();
+        }
+        
+    }
+}
+
