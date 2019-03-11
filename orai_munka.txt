@@ -210,3 +210,112 @@ namespace ConsoleApplication5
     }
 }
 
+-----------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Text.RegularExpressions; 
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int[] tomb = {10, 12, 123};                 // verzió 1 (egyszerűbb)
+
+            /*
+            int[] tomb = new int[3];                    // verzió 2 ( részletesebben kiíratva)
+            int elso = tomb[0];
+            int masodik = tomb[1];
+            int harmadik = tomb[2];
+            tomb[0] = 10;
+            tomb[1] = 12;
+            tomb[2] = 123;
+            */
+
+            Console.WriteLine(tomb[0]);                 // kiíratja a tömb valahanyadik elemét
+            Console.WriteLine(tomb[1]);
+            Console.WriteLine(tomb[2]);
+            
+            Console.ReadKey();
+            
+
+
+            
+        }
+        
+    }
+}
+---------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Text.RegularExpressions; 
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] kosar = { "alma", "körte", "barack", "szőlő", "szilva" };    //szöveg típusú tömb létrehozása
+            
+         
+                                                       
+
+            Console.WriteLine( kosar[2] );
+            
+            Console.ReadKey();
+            
+
+
+            
+        }
+        
+    }
+}
+
+---------------------------------------------------------------------------------------------------
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Text.RegularExpressions; 
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string[] kosar;
+            kosar = new string[5];
+            kosar[0] = "alma";
+            kosar[1] = "körte";
+            kosar[2] = "barack";
+            kosar[3] = "szőlő";
+            kosar[4] = "szilva";
+                                                       
+
+            Console.WriteLine( kosar[2] );
+            
+            Console.ReadKey();
+            
+
+
+            
+        }
+        
+    }
+}
+---------------------------------------------------------------------------------------------------
