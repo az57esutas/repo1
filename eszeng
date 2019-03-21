@@ -1,0 +1,10 @@
+import time
+
+print ("Add meg a kulcs azonosítószámát:(4 számjegy)")
+kulcs = int(input())
+date = time.time()
+
+
+print ("a kód: ", (kulcs * date) / 10000000)
+
+
