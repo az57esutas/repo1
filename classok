@@ -11,3 +11,94 @@ v2 = Vektor(12, 5, 14)
 print (v1.x)
 print (v1.y)
 print (v1.z)
+
+#-----------------------------------------------------------------------------------
+
+class Vektor:
+    def __init__(self, x = 0, y = 0, z = 0):
+        self.x = x
+        self.y = y
+        self.z = z
+
+v1 = Vektor(z = 7, y = 1)
+
+
+print (v1.x, v1.y, v1.z)
+
+#---------------------------------------------
+
+class Vektor:
+    def __init__(self, x = 0, y = 0, z = 0):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def hossz(self):
+        h = (self.x ** 2 + self.y **2) ** 0.5
+        return h
+
+
+v1 = Vektor(3, 4)
+
+
+print ( v1.hossz()  )
+
+
+#---------------------------------------------
+
+# 3dimenziós vektor hossz
+class Vektor:
+    def __init__(self, x = 0, y = 0, z = 0):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def hossz(self):
+        h = (self.x ** 2 + self.y **2 + self.z **2) ** 0.5
+        return h
+
+
+v1 = Vektor(-2, 4, 5)
+
+
+print ( v1.hossz()  )
+
+#--------------------------------------------
+#modulokba
+
+import geometria
+
+v1 = geometria.Vektor(3, 5, 4)
+print (v1, hossz() )
+
+
+#----------------------------------------
+# osztás definiálás, 0-val nem ad értéket
+def osztas(a, b):
+    if b == 0:
+        return None
+    return a / b
+
+
+print (osztas(10, 2))
+
+#-----------------------------------------
+# elkapjuk a kivételt, ha nem jó akkor visszatér
+
+def osztas(a, b):
+    try:
+        r = a / b
+    except:
+        return None
+    return r
+
+print (osztas(10, 2))
+    
+#------------------------------------------
+# numpy cuccok
+
+import numpy
+a = numpy.array([1,2,3,4,5])
+x = numpy.linspace(1, 10, 8)
+y = x**2
+print(y)
